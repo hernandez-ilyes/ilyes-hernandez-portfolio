@@ -1,0 +1,124 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 250px;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+#header-model {
+  width: 40%;
+  height: auto;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-50%) translateY(25%);
+  animation: openAnimationForText 1s backwards;
+  animation-delay: 200ms;
+  position: absolute;
+}
+
+#text {
+  width: 100%;
+  margin: 0;
+  animation: openAnimation 1s backwards;
+  padding: 0;
+  height: auto;
+}
+
+.get-in-touch {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 100px;
+  border: solid #ff8c66;
+  cursor: pointer;
+  animation: openAnimation 1s backwards;
+  animation-delay: 400ms;
+  font-size: 1rem;
+  background-color: transparent;
+  transition-duration: 300ms;
+
+  &:hover {
+    background-color: #ff8c66;
+    color: white;
+  }
+}
+
+.social-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  column-gap: 25px;
+  margin-top: 20px;
+}
+
+.social-group * {
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      cursor: pointer;
+      filter: brightness(0.5);
+      transition-duration: 300ms;
+
+      &:hover {
+        filter: brightness(1);
+      }
+
+      animation: openAnimation 1s;
+      animation-fill-mode: backwards;
+      animation-delay: 200ms * $i;
+    }
+  }
+}
+
+#blocked {
+  filter: brightness(0.5);
+
+  &:hover {
+    filter: brightness(0.5);
+  }
+}
+
+@keyframes openAnimation {
+  0% {
+    transform: translateY(15%);
+    opacity: 0%;
+  }
+
+  20% {
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes openAnimationForText {
+  0% {
+    transform: translateX(-50%) translateY(50%);
+    position: absolute;
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(25%);
+    position: absolute;
+    opacity: 100%;
+  }
+}
