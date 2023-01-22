@@ -21,10 +21,7 @@
       property="og:description"
       content="Looking for a professional web developer? Look no further. I offer custom website development services to help bring your online vision to life. Contact me today for a free consultation."
     />
-    <meta
-      property="og:image"
-      content="/meta_image.png"
-    />
+    <meta property="og:image" content="/meta_image.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -34,11 +31,9 @@
       property="twitter:description"
       content="Looking for a professional web developer? Look no further. I offer custom website development services to help bring your online vision to life. Contact me today for a free consultation."
     />
-    <meta
-      property="twitter:image"
-      content="/meta_image.png"
-    />
+    <meta property="twitter:image" content="/meta_image.png" />
     <link rel="stylesheet" href="style.scss" />
+    <script src="script.js"></script>
     <title>Ilyès Hernandez - Web developer</title>
   </head>
 
@@ -46,20 +41,31 @@
     <div class="images">
       <img
         id="text"
+        class="layer"
+        data-text
+        data-speed="5"
         src="/text.png"
         alt="A image format of a text contains 'ILYES'."
       />
       <img
         id="header-model"
+        class="layer"
+        data-speed="-10"
         src="/header-3d-model.png"
         alt="A cool 3D model in image format."
       />
     </div>
     <div class="bottom">
-      <a href="https://7e9hw7gw3oc.typeform.com/to/pguvyHra"><button class="get-in-touch">GET IN TOUCH</button></a>
+      <a href="https://7e9hw7gw3oc.typeform.com/to/pguvyHra"
+        ><button class="get-in-touch">GET IN TOUCH</button></a
+      >
       <div class="social-group">
-        
-        <img src="/instagram.png" id="blocked" style="cursor: not-allowed;" alt="Instagram logo" />
+        <img
+          src="/instagram.png"
+          id="blocked"
+          style="cursor: not-allowed"
+          alt="Instagram logo"
+        />
 
         <a
           href="https://twitter.com/MidsOff"
@@ -75,7 +81,10 @@
           ><img src="/github.png" alt="Github logo"
         /></a>
 
-        <a href="https://discord.com/channels/@me" target="_blank" rel="noopener noreferrer"
+        <a
+          href="https://discord.com/channels/@me"
+          target="_blank"
+          rel="noopener noreferrer"
           ><img src="/discord.png" alt="Discord logo"
         /></a>
       </div>
