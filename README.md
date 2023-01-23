@@ -1,18 +1,26 @@
-# Mon site personnel
-Ce référentiel contient le code source pour mon site personnel. J'ai créé ce site pour mettre en pratique les bases de SCSS et pour avoir un endroit pour me présenter et partager mes liens de réseaux sociaux. Vous pouvez également me contacter via le formulaire de contact sur le site.
+# My Personal Site
 
-# Technologies utilisées
+Welcome to my personal repository! This repository contains the source code for my personal website, created to practice the basics of SCSS and to have a place to present myself and share my social media links. You can also contact me through the contact form on the site.
+
+## Technologies Used
+
 - HTML
 - SCSS
 - JavaScript
-# Comment utiliser
-Pour utiliser ce code, vous aurez besoin d'un éditeur de code et d'un navigateur web ainsi que de Node.js d'installer.
+- Node.js
 
-- Clonez ce référentiel sur votre ordinateur
-- Faite la commande `npm install` puis une fois les dépendances installé, faite `pnpm run dev`. Vous devriez voir le projet sur l'addresse : `http://localhost:3000`.
-Si vous souhaitez apporter des modifications au code, vous devrez également avoir un compilateur SCSS installé pour compiler les fichiers SCSS en CSS avant de les utiliser sur le site.
+## How to Use
 
-# Contribution
-Si vous souhaitez contribuer à ce projet, vous êtes les bienvenus pour soumettre des pull requests. Je serai heureux de discuter de toute idée ou suggestion que vous pourriez avoir.
+To use this code, you will need a code editor, a web browser, and Node.js installed on your computer.
 
-Merci d'avoir visité mon site!
+1. Clone this repository to your computer
+2. Use the command `npm install` to install the necessary dependencies
+3. Use the command `npm run dev` to run the project in development mode. The site will be accessible at `http://localhost:3000`.
+
+If you wish to make modifications to the code, you will also need a SCSS compiler installed to compile the SCSS files into CSS before using them on the site.
+
+## Contribution
+
+If you wish to contribute to this project, you are welcome to submit pull requests. I will be happy to discuss any ideas or suggestions you may have.
+
+Thank you for visiting my site!
